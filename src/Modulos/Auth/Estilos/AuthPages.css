@@ -1,0 +1,78 @@
+.auth-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.auth-page h2 {
+  font-family: var(--sq-font);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--sq-text);
+  margin: 0 0 1.75rem;
+}
+
+.auth-page .auth-field {
+  margin-bottom: 1.1rem;
+}
+
+.auth-page label {
+  display: block;
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--sq-text);
+  margin-bottom: 0.35rem;
+}
+
+.auth-page input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--sq-font);
+  font-size: 0.9375rem;
+  border: 1px solid var(--sq-border-strong);
+  border-radius: var(--sq-radius);
+  background: var(--sq-bg);
+  color: var(--sq-text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.auth-page input:focus {
+  outline: none;
+  border-color: var(--sq-text);
+  box-shadow: 0 0 0 1px var(--sq-text);
+}
+
+.auth-page .auth-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--sq-font);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--sq-cta);
+  border: none;
+  border-radius: var(--sq-radius);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.auth-page .auth-submit:hover {
+  background: var(--sq-cta-hover);
+}
+
+.auth-page .auth-msg-error {
+  color: var(--sq-error);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-family: var(--sq-font);
+}
+
+.auth-page .auth-msg-success {
+  color: var(--sq-success);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-family: var(--sq-font);
+}

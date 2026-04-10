@@ -1,0 +1,205 @@
+.dashboard-container {
+  padding: 2rem 1.5rem 3rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--sq-border);
+}
+
+.dashboard-bienvenida {
+  font-family: var(--sq-font);
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--sq-text);
+  margin: 0 0 0.35rem;
+}
+
+.dashboard-bienvenida span {
+  color: var(--sq-text);
+  font-weight: 700;
+}
+
+.dashboard-subtitle {
+  font-family: var(--sq-font);
+  color: var(--sq-text-secondary);
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.btn-logout {
+  background: transparent;
+  color: var(--sq-text);
+  border: 1px solid var(--sq-border-strong);
+  padding: 0.55rem 1rem;
+  border-radius: var(--sq-radius);
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-logout:hover {
+  background: var(--sq-bg-muted);
+  border-color: var(--sq-text);
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: var(--sq-bg);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius-md);
+  padding: 1.25rem 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--sq-shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--sq-border-strong);
+  box-shadow: var(--sq-shadow-md);
+}
+
+.stat-card.highlight {
+  background: var(--sq-cta);
+  border-color: var(--sq-cta);
+  color: #fff;
+}
+
+.stat-card.highlight .stat-number,
+.stat-card.highlight .stat-label {
+  color: #fff;
+}
+
+.stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--sq-text);
+  opacity: 0.85;
+}
+
+.stat-card.highlight .stat-icon {
+  color: #fff;
+  opacity: 1;
+}
+
+.stat-number {
+  font-family: var(--sq-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--sq-text);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  color: var(--sq-text-secondary);
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+.dashboard-section-title {
+  font-family: var(--sq-font);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--sq-text);
+  margin-bottom: 1rem;
+}
+
+.dashboard-modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.modulo-card {
+  background: var(--sq-bg);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius-md);
+  padding: 1.5rem 1.35rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  box-shadow: var(--sq-shadow-sm);
+}
+
+.modulo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--sq-text);
+  border-radius: var(--sq-radius) 0 0 var(--sq-radius);
+  opacity: 0.9;
+}
+
+.modulo-card:hover {
+  border-color: var(--sq-text);
+  box-shadow: var(--sq-shadow-md);
+}
+
+.modulo-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 0.85rem;
+  border-radius: var(--sq-radius);
+  background: var(--sq-bg-muted);
+  color: var(--sq-text) !important;
+}
+
+.modulo-card h3 {
+  font-family: var(--sq-font);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--sq-text);
+  margin: 0 0 0.35rem;
+}
+
+.modulo-card p {
+  font-family: var(--sq-font);
+  font-size: 0.875rem;
+  color: var(--sq-text-secondary);
+  margin: 0 0 0.85rem;
+  line-height: 1.5;
+}
+
+.modulo-card-count {
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--sq-text);
+  background: var(--sq-bg-muted);
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--sq-radius);
+  border: 1px solid var(--sq-border);
+}

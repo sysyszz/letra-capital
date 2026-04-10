@@ -1,0 +1,82 @@
+.nav-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-brand {
+  font-family: var(--sq-font);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--sq-text);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-brand:hover {
+  color: var(--sq-text-secondary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--sq-text);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  padding: 0.35rem 0;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--sq-text-secondary);
+}
+
+.nav-links li .nav-btn-logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sq-font);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--sq-text);
+  padding: 0.35rem 0;
+  transition: color 0.15s ease;
+}
+
+.nav-links li .nav-btn-logout:hover {
+  color: var(--sq-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    padding: 0.65rem 1rem;
+    height: auto;
+    min-height: 3.5rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem 1rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
